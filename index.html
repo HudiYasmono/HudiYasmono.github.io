@@ -1,21 +1,22 @@
 <head>
  
 <style>  
-.h1{
+.logo{
+border:0px;
+margin:0px;
+padding:0px;
 text-align:center;
-font-size: 50;
-background-color: black
-color:white:
+background-color: darkblue;
+color:white;
+font-size:45px;
 }
 .nav{
-    border:1px solid #ccc;
-    border-width:1px 0;
-    list-style:none;
+  border: 0px;
+  background-color: lightblue;
+  text-align: center;
     color:white
-    background-color: dark-blue;
     margin:0;
     padding:0;
-    text-align:center;
 }
 .nav li{
     display:inline;
@@ -24,18 +25,63 @@ color:white:
     display:inline-block;
     padding:20px;
 }
+
+.column {
+  float: left;
+  width: 33.33%;
+    border: 0px;
+  background-color: lightgray;
+  text-align: center;
+    color:white
+    margin:0;
+    padding:0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 
 </head>
 <body>
-<div class="h1">
-<p> DUNIA GAME</p>
+<article>
+  <header>
+<div class="logo">
+<h1><center>AnimeLife</center></h1>
 </div>
+</header>
+
+</article>
+
 <ul class="nav">
-  <li><a href="naufalgr.github.io">Home</a></li>
+  <li><a href="https://naufalgr.github.io">Home</a></li>
   <li><a href="/about/">About</a></li>
   <li><a href="/work/">Work</a></li>
   <li><a href="/clients/">Clients</a></li>
   <li><a href="/contact/">Contact</a></li>
 </ul>
+
+<div class="row">
+<div class="column">
+<h3> Anohana</h3>
+<img src="Anohana.jpg" width="300" height="200" border="3px solid black">
+<p> Anime ini bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+pokoknya bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+ bla bla bla bla bla bla bla bla bla</p>
+
+</div>
+
+<div class="column">
+<h3> Your Name/Kimi No Nawa</h3>
+<img src="Yourname.jpg" width="300" height="200" border="3px solid black">
+
+</div>
+
+<div class="column">
+<h3> 5 Centimeter Per Second</h3>
+<img src="5cm.jpg" width="300" height="200" border="3px solid black">
+</div>
+</div>
 </body>
