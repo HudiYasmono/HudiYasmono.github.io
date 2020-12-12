@@ -1,14 +1,36 @@
 <head>
- 
-<style>  
+    <title>Beranda</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:darkgray;
+    padding: 0;
+    margin:0;
+    
+}
+
+.container{
+    width: 65%;
+    height: auto;
+    background: white;
+    margin:auto;
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
 .logo{
 border:0px;
-margin:0px;
+margin:0;
 padding:0px;
 text-align:center;
 background-color: darkblue;
-color:white;
-font-size:45px;
+}
+.about{
+border:0px;
+margin:0;
+padding:0px;
+text-align:center;
+background-color: white;
 }
 .nav{
   border: 0px;
@@ -26,58 +48,144 @@ font-size:45px;
     padding:20px;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-    border: 0px;
-  background-color: lightgray;
-  text-align: center;
-    color:white
-    margin:0;
-    padding:0;
+nav li a:hover {
+    opacity:0.9;
+    background-color: #3385ff;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+article {
+    width: 98.8%;
+    height: auto;
+    border-radius: 3px;
+    margin: 5px 5px 5px 5px;
+    border: 1px solid gainsboro;
+    clear: both;
+}
+
+article p {
+    padding: 5px 6px 5px 5px;
+    line-height: 1.5;  
+}
+article .konten {
+    width: 20.5%;
+    height: auto;
+    margin: 5px 5px 5px 75px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    float: left;
+}
+
+article .isi {
+    width: 98.5%;
+    height: auto;
+    margin: 5px 5px 5px 50px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    float: left;
+}
+article .isi .judul {
+    font-size: xx-large;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+article .isi p {
+    margin-top: 0;
+}
+article .isi img {
+    float: left;
+    margin: 5px 5px 5px 5px;
+}
+
+article .konten img {
+    width: 95.8%;
+    height: 150px;
+    margin: 5px 5px 5px 5px;
+
+}
+article .konten:hover {
+    opacity:0.9;
+
+}
+article .konten .judul a {
+    margin-left: 5px;
+    text-decoration: none;
+    font-size:x-large;
+    color:#020101;
+}
+
+article .konten a:hover {
+    opacity:0.9;
+}
+
+footer {
+    clear: both;
+    width: 98.8%;
+    height: auto;
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+    border-radius: 3px;
+    border-bottom: 1px solid gainsboro;
+    padding-top: 15px;
+    padding-bottom: 15px;  
 }
 </style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
-<article>
-  <header>
-<div class="logo">
-<h1><center>AnimeLife</center></h1>
-</div>
-</header>
+    <div class="container">
+       <header>
+           <div class="logo">
+               <img src="image/Judul.jpg" width="100" height="90">
+           </div>
+       </header>
+       <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="tentang-saya.html">Contact</a></li>
+            </ul>
+        </nav>
+       <article>
 
+           <div class="konten">
+            <a href="Anohana.html"><img src="image/Anohana.jpg" ></a>
+            <div class="judul">
+                <a href="Anohana.html">Anohana</a>
+            </div>
+           <p>  </p>
+           </div>
+           <div class="konten">
+            <a href="Yourname.html"><img src="image/Yourname.jpg" ></a>
+            <div class="judul">
+                <a href="Yourname.html">Your Name/Kimi No Nawa</a>
+            </div>
+        
+           <p>Kimi no Na wa bercerita seputar kehidupan seorang gadis bernama Mitsuha Miyamizu dan 
+seorang anak lelaki bernama Taki Tachibana. Mitsuha adalah anak dari desa sementara, </p>
+           </div>
+           <div class="konten">
+            <a href="5cm.html"><img src="image/5cm.jpg" ></a>
+            <div class="judul">
+                <a href="5cm.html">5 Centimeter per Second</a>
+            </div>
+           <p>5 Centimeters per Second adalah film anime bergenre romance. 
+Film ini pada dasarnya bercerita tentang hubungan cinta dua remaja. Kisah mereka,</p>
+           </div>
+
+     </article>
+<article>
+<div class="about">
+<h1>About</h1>
+<p id="about">Website ini berisi review dari berbagai macam Film Anime terbaik yang sangat dianjurkan
+untuk ditonton bagi yang mencari film/series anime big-budget top-tier yang sudah direview</p>
+</div>
 </article>
 
-<ul class="nav">
-  <li><a href="https://naufalgr.github.io">Home</a></li>
-  <li><a href="/about/">About</a></li>
-  <li><a href="/work/">Work</a></li>
-  <li><a href="/clients/">Clients</a></li>
-  <li><a href="/contact/">Contact</a></li>
-</ul>
+       <footer>
+            <p>Copyright 2020 WebAniView.com (powered by <a href="https://gamelab.id">Gamelab.id</a>)
 
-<div class="row">
-<div class="column">
-<h3> Anohana</h3>
-<img src="image/Anohana.jpg" width="300" height="200" border="3px solid black">
-</div>
-
-<div class="column">
-<h3> Your Name/Kimi No Nawa</h3>
-<img src="image/Yourname." width="300" height="200" border="3px solid black">
-
-</div>
-
-<div class="column">
-<h3> 5 Centimeter Per Second</h3>
-<img src="image/5cm.jpg" width="300" height="200" border="3px solid black">
-</div>
-</div>
+       </footer>
+    </div>
 </body>
