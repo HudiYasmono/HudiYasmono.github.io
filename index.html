@@ -1,14 +1,18 @@
 <html>
 <head>
     <title>ANIVIEW</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    
 <style>
 body{
     font-family: Arial, Helvetica, sans-serif;
     background:darkgray;
     padding: 0;
     margin:0;
-    
+    }
+
+p {
+font-family: , Helvetica, sans-serif;
+font-size: 18px;
 }
 
 .container{
@@ -26,6 +30,7 @@ padding:0px;
 text-align:center;
 background-color: darkblue;
 }
+
 #navbar {
   overflow: hidden;
   background-color: #333;
@@ -66,6 +71,16 @@ margin:0;
 padding:0px;
 text-align:center;
 background-color: white;
+}
+
+.contact{
+    width: 100%;
+    height: auto;
+    background: #50B0CA;
+color: white;
+    margin:auto;
+    margin-top: 5px;
+    padding-bottom: 5px;
 }
 
 article {
@@ -144,9 +159,41 @@ footer {
     padding-top: 15px;
     padding-bottom: 15px;  
 }
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+input[type=submit] {
+  background-color: lime;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.writehere {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #50B0CA;
+  padding: 20px;
+}
 </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 </head>
 <body>
     <div class="container">
@@ -164,6 +211,7 @@ footer {
        <article>
 
 <div class="home">
+<p id="home"></p>
 <h1>Intro</h1>
 <p>Wassup guys dan welcome ke website saya yang amatiran berisi konten-konten anime dan terkadang
 manga yang sudah direview, mohon maaf jika ada kekurangan dari website ini, saya berharap nih website
@@ -200,17 +248,52 @@ Film ini pada dasarnya bercerita tentang hubungan cinta dua remaja. Kisah mereka
      </article>
 <article>
 <div class="about">
+<p id="about"></p>
 <h1>About</h1>
-<p id="about">Website ini berisi review dari berbagai macam Film Anime terbaik yang sangat dianjurkan
+<p>Website ini berisi review dari berbagai macam Film Anime terbaik yang sangat dianjurkan
 untuk ditonton bagi yang mencari film/series anime big-budget top-tier yang sudah direview</p>
 </div>
 </article>
 
-       <footer>
+    </div>
+
+<div class="contact">
+<p id="contact"></p>
+<h1 style="text-align:center">Contact</h1>
+
+
+<div class="writehere">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="indonesia">Indonesia</option>
+      <option value="malaysia">Malaysia</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+<p>Gmail: <a href="https://naufalghifari1139@gmail.com">naufalghifari1139@gmail.com</a><br></p>
+<p>Phone Number: +62 0984-4871-0080
+</div>
+
+<footer>
             <p>Copyright 2020 WebAniView.com (powered by <a href="https://gamelab.id">Gamelab.id</a>)
 
        </footer>
-    </div>
+</div>
 </body>
 </html>
 
