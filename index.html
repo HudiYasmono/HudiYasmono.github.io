@@ -106,9 +106,9 @@ article p {
     line-height: 1.5;  
 }
 article .konten {
-    width: 28.5%;
+    width: 20.5%;
     height: auto;
-    margin: 5px 5px 5px 400px;
+    margin: 5px 5px 5px 105px;
     border-radius: 3px;
     border: 1px solid gainsboro;
     float: left;
@@ -202,6 +202,7 @@ input[type=submit]:hover {
 </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=1280, initial-scale=1">
 
 </head>
 <body>
@@ -347,4 +348,9 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+var siteWidth = 1280;
+var scale = screen.width /siteWidth;
+
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
 </script>
