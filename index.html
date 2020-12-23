@@ -3,12 +3,7 @@
     <title>AniRev</title>
     
 <style>
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 812px) 
-and (-webkit-min-device-pixel-ratio: 3) {
 
-}
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-image: url('image/background.jpg');
@@ -210,6 +205,7 @@ input[type=submit]:hover {
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=1280, initial-scale=1">
 
 
 </head>
@@ -356,5 +352,9 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+    var siteWidth = 1280;
+var scale = screen.width /siteWidth;
+
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
 
 </script>
