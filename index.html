@@ -16,7 +16,7 @@ font-size: 18px;
 }
 
 .container{
-    width: 900px;
+    width: 85%;
     height: auto;
     background: white;
     margin:auto;
@@ -29,7 +29,6 @@ margin:0;
 padding:0px;
 text-align:center;
 background-color: darkblue;
-    width: auto;
 }
 
 .jumbotron{
@@ -39,7 +38,6 @@ color:white;
 font-family:'Courier New';
 border: 1px solid black;
 font-size: 30px;
-    width: auto;
 }
 
 #navbar {
@@ -85,7 +83,7 @@ background-color: white;
 }
 
 .contact{
-    width: auto;
+    width: 100%;
     height: auto;
     background: #50B0CA;
 color: white;
@@ -110,7 +108,7 @@ article p {
 article .konten {
     width: 20.5%;
     height: auto;
-    margin: 5px 5px 5px 85px;
+    margin: 5px 5px 5px 105px;
     border-radius: 3px;
     border: 1px solid gainsboro;
     float: left;
@@ -202,8 +200,9 @@ input[type=submit]:hover {
   padding: 20px;
 }
 </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -351,5 +350,8 @@ function myFunction() {
   }
 }
 
+var siteWidth = 1280;
+var scale = screen.width /siteWidth;
 
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
 </script>
