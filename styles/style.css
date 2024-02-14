@@ -312,6 +312,7 @@ input[type=submit]:hover {
 
 
 
+
 .row {
   display: flex;
 }
@@ -372,3 +373,10 @@ input[type=submit]:hover {
   right: 0;
 }
 
+
+.writehere {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: 34CCCC;
+  padding: 20px;
+}
